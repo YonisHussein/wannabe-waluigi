@@ -1,56 +1,48 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-body {
-    margin: 0px;
-    color: #325d86;
-    border-radius: 5px;
-}
-
 header {
-    background-color: #e7ebef;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    background-size: cover;
+    background-position-y: 40%;
+    color: white;
+    background-color: navy;
+    position: relative;
+
 }
 
-h1 {
+header h1 {
+    font-size: 400%;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-clip: text;
+
 }
 
-#search-pane {
-    max-width: 500px;
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+
 }
 
-.search {
-    display: flex;
-    margin: 8px;
+#search-city {
+    width: 80%;
 }
 
-label {
-    min-width: 125px;
-    padding: 5px;
+#search-button-icon {
+    width: 15px;
+    display: inline-block;
 }
 
-.search-input {
-    width: 100%;
+#current-weather {
+    padding-left: 15px;
 }
 
-button {
-    color: #ffff;
-    background-color: #325d86;
-    margin-left: 5px;
+#clear-storage {
+    color: gray;
+    text-decoration: none;
+    font: size 0.75em;
+    
 }
 
 .weather-card {
-    margin: 8px;
-    border-width: 2px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
+    width: 9rem;
+    background-color: #0275db;
 }

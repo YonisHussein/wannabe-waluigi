@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Weather Dashboard</h1>
-    </header>
-    <main>
-        <div id="search-pane"><form class="seach">
-            <label for="city-input">City Search</label>
-            <label for="city-input" type="text" class="search-input border"></label>
-            <button id="search-button" class="border"><i class="fas fa-search"></i></button>
-        </form>
+    <div id="header" class="jumbotron jumbotron-fluid text container">
+        <h1 id="header-text" class="display-2"></h1>
+        <div id="artist-credit"></div>
     </div>
-    </main> 
+
+    <div id="content" class="container">
+        <div class="row">
+            <div id="content-left" class="col-md-3">
+                <form>
+                    <label for="search-city" class="form-control" name="city"></label>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
