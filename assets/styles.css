@@ -1,0 +1,16 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0px;
+    color: #325d86;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #e7ebef;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
