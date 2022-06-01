@@ -17,9 +17,16 @@ var getCurrentConditions = (event) => {
     .then((response) => {
         return reponse.json();
     })
+    .then ((response) => {
+        saveCity(city);
+        $("#search-error").text("");
+        let currentWeatherIcon = "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png"
+        let currentTimeUTC = response.dt;
+        let currentTimeZoneOffset = reponse.timezone;
+        let currentTimeZoneOffsetHours = currentTimeZoneOffset / 60 /60;
+        let currentMoiment = moment.unix(currentTimeUTC.utc().utcOffset(currentTimeZoneOFfsetHours);
+        )
+
+    })
 
 }
-.then ((response) => {
-    saveCity(city);
-    $("#search-error")
-})
