@@ -14,3 +14,43 @@ header {
     display: flex;
     justify-content: center;
 }
+
+h1 {
+    text-align: center;
+}
+
+#search-pane {
+    max-width: 500px;
+}
+
+.search {
+    display: flex;
+    margin: 8px;
+}
+
+label {
+    min-width: 125px;
+    padding: 5px;
+}
+
+.search-input {
+    width: 100%;
+}
+
+button {
+    color: #ffff;
+    background-color: #325d86;
+    margin-left: 5px;
+}
+
+.weather-card {
+    margin: 8px;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
